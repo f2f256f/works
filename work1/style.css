@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  padding: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: keep-all;
+  flex-direction: column;
+  text-shadow: 1px 2px 10px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6c6c6;
+}
+
+#title {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  word-break: keep-all;
+  color: white;
+  margin-block: 40px;
+}
+
+main {
+  background-color: white;
+  margin-inline: 300px;
+}
+
+#section1 {
+  text-align: center;
+}
+#section2 {
+  text-align: center;
+}
+
+#section1 img.animTarget {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#section1.triggered img.animTarget {
+  opacity: 1;
+}
+
+#section2 img.animTarget {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#section2.triggered img.animTarget {
+  opacity: 1;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'BookkMyungjo-Bd';
+  font-size: 16px;
+  line-height: 1.8;
+  word-break: keep-all;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  #title {
+    font-size: 25px;
+  }
+
+  main {
+    margin-inline: 50px;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
